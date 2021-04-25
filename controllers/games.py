@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse, abort
-import json
-import os
+from scraping.process import doProcess
 #example to commit variables
 # person_post_args = reqparse.RequestParser()
 # person_post_args.add_argument("age",type=int,help="peson age", required=True)
@@ -20,11 +19,4 @@ class games(Resource):
     #     persons[name] = args
     #     return persons[name],201
     def get(self):
-        try:
-            actual_path = os.path.dirname(os.path.abspath(__file__))
-            result_path = actual_path + "/scrape_result.json"
-            file = open(result_path)
-            data = json.load(file)
-            return {"data":data}
-        except Exception  as err:
-            return {"data": str(err)}
+        return {"data":doProcess()}
