@@ -25,6 +25,7 @@ class games(Resource):
             result_path = actual_path + "\\scrape_result.json"
             file = open(result_path)
             data = json.load(file)
+            p = 10 /0
             return {"data":data}
-        except:
-            return {"data":"ValueError"}
+        except Exception  as err:
+            return {"data": str(err)}
