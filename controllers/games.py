@@ -26,5 +26,5 @@ class games(Resource):
             file = open(result_path)
             data = json.load(file)
             return {"data":data}
-        except:
-            return {"data":"nada"}
+        except error:
+            return {"data":error}
