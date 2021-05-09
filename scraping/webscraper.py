@@ -21,6 +21,9 @@ op.add_argument('--disable-gpu')
 op.add_argument('--no-sandbox')
 op.binary_location = os.getenv('GOOGLE_CHROME_PATH')
 
+print( os.getenv('GOOGLE_CHROME_PATH'))
+print( os.getenv('CHROMEDRIVER_PATH'))
+
 browser = webdriver.Chrome(execution_path=os.getenv('CHROMEDRIVER_PATH'), chrome_options=op)
 
 actual_path = os.path.dirname(os.path.abspath(__file__))
