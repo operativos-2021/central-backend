@@ -24,7 +24,7 @@ op.binary_location = os.getenv('GOOGLE_CHROME_PATH')
 print( os.getenv('GOOGLE_CHROME_PATH'))
 print( os.getenv('CHROMEDRIVER_PATH'))
 
-browser = webdriver.Chrome(execution_path=os.getenv('CHROMEDRIVER_PATH'), chrome_options=op)
+driver = webdriver.Chrome(executable_path=os.getenv('CHROMEDRIVER_PATH'), chrome_options=op)
 
 actual_path = os.path.dirname(os.path.abspath(__file__))
 result_path = actual_path + "/game_list.json"
