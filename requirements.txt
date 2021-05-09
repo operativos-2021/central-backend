@@ -34,4 +34,4 @@ webdriver-manager==3.4.0
 multiprocess==0.70.11.1
 boto3==1.17.69
 boto==2.49.0
-chromedriver_installer==0.0.6
+chromedriver-py==91.0.4472.19
