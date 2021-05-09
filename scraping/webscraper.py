@@ -17,7 +17,12 @@ games_info = {}
 
 op = webdriver.ChromeOptions()
 op.add_argument('headless')
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=op)
+op.add_argument('--disable-gpu')
+op.add_argument('--no-sandbox')
+op.binary_location = GOOGLE_CHROME_PATH
+
+browser = webdriver.Chrome(execution_path=CHROMEDRIVER_PATH, chrome_options=op)
+
 actual_path = os.path.dirname(os.path.abspath(__file__))
 result_path = actual_path + "/game_list.json"
 f = open(result_path)
