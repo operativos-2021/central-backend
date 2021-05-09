@@ -14,7 +14,8 @@ global disable_continue
 disable_continue = None
 
 games_info = {}
-
+actual_path = os.path.dirname(os.path.abspath(__file__))
+print("ACTUAL PATH:"+actual_path)
 op = webdriver.ChromeOptions()
 op.add_argument('headless')
 op.add_argument('--disable-gpu')
@@ -26,7 +27,7 @@ print( os.getenv('CHROMEDRIVER_PATH'))
 
 driver = webdriver.Chrome(executable_path=os.getenv('CHROMEDRIVER_PATH'), chrome_options=op)
 
-actual_path = os.path.dirname(os.path.abspath(__file__))
+
 result_path = actual_path + "/game_list.json"
 f = open(result_path)
 games_data = json.load(f)
