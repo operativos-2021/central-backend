@@ -15,7 +15,7 @@ disable_continue = None
 
 games_info = {}
 actual_path = os.path.dirname(os.path.abspath(__file__))
-print("ACTUAL PATH:"+actual_path)
+print("ACTUAL PATH:"+actual_path + "  Test")
 op = webdriver.ChromeOptions()
 op.add_argument('headless')
 op.add_argument('--disable-gpu')
