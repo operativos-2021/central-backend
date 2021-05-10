@@ -16,16 +16,16 @@ disable_continue = None
 games_info = {}
 actual_path = os.path.dirname(os.path.abspath(__file__))
 print("ACTUAL PATH:"+actual_path + "  Test")
-op = webdriver.ChromeOptions()
-op.add_argument('headless')
-op.add_argument('--disable-gpu')
-op.add_argument('--no-sandbox')
-op.binary_location = os.getenv('GOOGLE_CHROME_PATH')
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_PATH') # GOOGLE_CHROME_PATH: /app/.apt/usr/bin/google-chrome; GOOGLE_CHROME_BIN=/app/.apt/usr/bin/google-chrome
 
-print( os.getenv('GOOGLE_CHROME_PATH'))
-print( os.getenv('CHROMEDRIVER_PATH'))
+print( os.environ.get('GOOGLE_CHROME_PATH'))
+print( os.environ.get('CHROMEDRIVER_PATH'))
 
-driver = webdriver.Chrome(executable_path=os.getenv('CHROMEDRIVER_PATH'), chrome_options=op)
+driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), chrome_options=chrome_options) #CHROMEDRIVER_PATH:   /app/.chromedriver/bin/chromedriver CHROMEDRIVER_PATH=/app/.chromedriver/bin/chromedriver
 
 
 result_path = actual_path + "/game_list.json"
