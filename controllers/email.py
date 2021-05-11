@@ -20,7 +20,8 @@ CHARSET = "UTF-8"
 client = boto3.client(
     'ses',
     aws_access_key_id='AKIAJLSX5YKNJGVW5KWA',
-    aws_secret_access_key='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'
+    aws_secret_access_key='nXRtRsAe7HZO6SK8eCPL4cNYfeqaptfSpN3Itbvw',
+    region_name=AWS_REGION
 )
 
 
