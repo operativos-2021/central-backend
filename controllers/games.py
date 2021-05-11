@@ -26,11 +26,11 @@ class games(Resource):
         print("Hola")
         actual_path = os.path.dirname(os.path.abspath(__file__))
         result_path = actual_path.replace("controllers","scraping/scrape_result.json")
-        with open(result_path, "w") as outfile: 
-            json.dump({}, outfile)
+        # with open(result_path, "w") as outfile: 
+        #     json.dump({}, outfile)
     
-        a_pool = multiprocessing.Pool()
-        a_pool.map(doScraping,range(quantity))
+        # a_pool = multiprocessing.Pool()
+        # a_pool.map(doScraping,range(quantity))
         file = open(result_path)
         data = json.load(file)
         return {"data":data}
