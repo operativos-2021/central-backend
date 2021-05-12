@@ -60,10 +60,10 @@ def getProductInfo(driver):
             title_list = div.find_elements_by_tag_name('strong')
             title_text = ''
             for title in title_list:
-                title_text = title.get_attribute('textContent').strip()
+                title_text = title.get_attribute('textContent').strip().replace(":", "")
 
             all_text = div.get_attribute('textContent').strip()
-            parent_text = all_text.replace(title_text, '').strip()
+            parent_text = all_text.replace(title_text+":", '').strip()
 
             info_results[title_text] = parent_text
 
