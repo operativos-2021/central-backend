@@ -29,17 +29,17 @@ class games(Resource):
         scrape_result_path = actual_path.replace("controllers","scraping/scrape_result.json")
         game_list_path = actual_path.replace("controllers","scraping/game_list.json")
 
-        with open(scrape_result_path, "w") as outfile: 
-            json.dump({}, outfile)
+        # with open(scrape_result_path, "w") as outfile: 
+        #     json.dump({}, outfile)
     
-        f = open(game_list_path)
-        games_data = json.load(f)
+        # f = open(game_list_path)
+        # games_data = json.load(f)
         
-        keys = list(games_data["data"].keys())
+        # keys = list(games_data["data"].keys())
 
-        keys_to_scrape = keys[0:quantity]
-        a_pool = multiprocessing.Pool()
-        a_pool.map(doScraping,keys_to_scrape)
+        # keys_to_scrape = keys[0:quantity]
+        # a_pool = multiprocessing.Pool()
+        # a_pool.map(doScraping,keys_to_scrape)
         # doScraping(quantity)
         file = open(scrape_result_path)
         
