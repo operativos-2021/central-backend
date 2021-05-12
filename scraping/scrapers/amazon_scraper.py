@@ -2,6 +2,13 @@ from selenium.common.exceptions import NoSuchElementException
 
 def getAmazonInfo(driver, url, disable_continue):
     driver.get(url)
+    if disable_continue:
+        try:
+            button = driver.find_element_by_xpath('/html/body/div[2]/header/div/div[4]/div[1]/div/div/div[3]/span[1]/span/input')
+            button.click()
+        except NoSuchElementException:
+            print("No check")
+        
 
     title = getAmazonProductTitle(driver)
     price = getAmazonProductPrice(driver)
@@ -23,12 +30,6 @@ def getAmazonProductTitle(driver):
         return str(None)
 
 def getAmazonProductPrice(driver):
-    # try:
-    #     price = driver.find_element_by_xpath('//*[@id="priceblock_ourprice"]').text
-    #     return '$'+price[4:]
-    # except NoSuchElementException:
-    #     price = driver.find_element_by_xpath('//*[@id="priceblock_pospromoprice"]').text
-    #     return '$'+price[4:]
     tries = 0
     while tries < 3:
         try:
@@ -43,8 +44,11 @@ def getAmazonProductPrice(driver):
                 return '$'+price[4:]
         except NoSuchElementException:
             price = 'None'
+        
         tries += 1
+    
     return price
+    
 
 def getAmazonProductPlatform(driver):
     try:  
