@@ -40,7 +40,6 @@ class games(Resource):
         keys_to_scrape = keys[0:quantity]
         a_pool = multiprocessing.Pool()
         a_pool.map(doScraping,keys_to_scrape)
-        closeDriver()
         # doScraping(quantity)
         file = open(scrape_result_path)
         
