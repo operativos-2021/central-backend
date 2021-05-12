@@ -195,4 +195,5 @@ def doScraping(game):
         data.update({game: games_info[game]})
         file.seek(0)
         json.dump(data, file)
+    driver.close()
         
