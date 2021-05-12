@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse, abort
 from scraping.webscraper import doScraping
+from scraping.webscraper import closeDriver
 import multiprocessing
 import os
 import json
@@ -25,14 +26,23 @@ class games(Resource):
     def get(self,quantity):
         print("Hola")
         actual_path = os.path.dirname(os.path.abspath(__file__))
-        result_path = actual_path.replace("controllers","scraping/scrape_result.json")
+        scrape_result_path = actual_path.replace("controllers","scraping/scrape_result.json")
+        game_list_path = actual_path.replace("controllers","scraping/game_list.json")
 
-        # with open(result_path, "w") as outfile: 
-        #     json.dump({}, outfile)
+        with open(scrape_result_path, "w") as outfile: 
+            json.dump({}, outfile)
     
-        # a_pool = multiprocessing.Pool()
-        # a_pool.map(doScraping,range(quantity))
-        file = open(result_path)
+        f = open(game_list_path)
+        games_data = json.load(f)
+        
+        keys = list(games_data["data"].keys())
+
+        keys_to_scrape = keys[0:quantity]
+        a_pool = multiprocessing.Pool()
+        a_pool.map(doScraping,keys_to_scrape)
+        closeDriver()
+        # doScraping(quantity)
+        file = open(scrape_result_path)
         
         data = json.load(file)
         return {"data":data}
