@@ -1,203 +1,440 @@
 {
-    "Animal Crossing: New Horizons": {
-        "Amazon": {
-            "ProductTitle": "Animal Crossing: New Horizons",
-            "ProductPrice": "$58.90",
-            "ProductPlatform": "Nintendo Switch"
-        },
-        "NintendoStore": {
-            "ProductTitle": "Animal Crossing: New Horizons",
-            "ProductPrice": "$59.99",
-            "ProductSKU#": "109505"
-        },
-        "Metacritic": {
-            "ProductTitle": "ANIMAL CROSSING: NEW HORIZONS",
-            "ProductPlatform": "Switch",
-            "ProductMetascore": "90",
-            "ProductUserScore": "5.5"
-        },
-        "HowLongToBeat": {
-            "ProductTitle": "None",
-            "ProductInfo": {
-                "description": "Nook Inc. invites you to create your personal island paradise on a deserted island brimming with possibility.",
-                "Platforms:": "Nintendo Switch",
-                "Genre:": "Simulation",
-                "Developer:": "Nintendo",
-                "Publisher:": "Nintendo",
-                "NA:": "March 20, 2020",
-                "EU:": "March 20, 2020",
-                "Updated:": "5.5 Hours Ago"
+    "data": {
+        "Animal Crossing: New Horizons": {
+            "Amazon": {
+                "url": "https://www.amazon.com/-/es/Animal-Crossing-New-Horizons/dp/B07SV4WDHK/ref=sr_1_4?__mk_es_US=\u00c3\u2026M\u00c3\u2026\u00c5\u00bd\u00c3\u2022\u00c3\u2018&dchild=1&keywords=Animal+Crossing&qid=1619285077&sr=8-4",
+                "ProductTitle": "Animal Crossing: New Horizons",
+                "ProductPrice": "$58.90",
+                "ProductPlatform": "Nintendo Switch"
             },
-            "ProductImg": "https://howlongtobeat.com/games/68240_Animal_Crossing_New_Horizons.jpg",
-            "ProductSoloTime": "None",
-            "ProductCoopTime": "None",
-            "ProductVsTime": "None",
-            "ProductMainStoryTime": "60\u00bd Hours",
-            "ProductMainExtrasTime": "119 Hours",
-            "ProductCompletionist": "355 Hours",
-            "ProductAllStylesTime": "85\u00bd Hours"
-        }
-    },
-    "Grand Theft Auto: San Andreas": {
-        "Amazon": {
-            "ProductTitle": "GTA San Andreas (Xbox 360)",
-            "ProductPrice": "$18.20",
-            "ProductPlatform": "Xbox 360"
-        },
-        "PlaystationStore": {
-            "ProductTitle": "Grand Theft Auto: San Andreas\u00ae",
-            "ProductPrice": "$14.99",
-            "ProductPlatform": "PS4"
-        },
-        "Metacritic": {
-            "ProductTitle": "GRAND THEFT AUTO: SAN ANDREAS",
-            "ProductPlatform": "PlayStation 2",
-            "ProductMetascore": "95",
-            "ProductUserScore": "9.1"
-        },
-        "HowLongToBeat": {
-            "ProductTitle": "None",
-            "ProductInfo": {
-                "description": "Five years ago Carl Johnson escaped from the pressures of life in Los Santos, San Andreas... a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers.Now, it's the early 90s. Carl's got to go home. His mother has been murdered, his family has fallen apart and his childhood friends are all heading towards disaster.On his return to the neighborhood, a couple of corrupt cops frame him for homicide. CJ is forced on a journey that takes him across the entire state of San Andreas, to save his family and to take control of the streets.",
-                "Platforms:": "Mobile, PC, PlayStation 2, PlayStation 3, PlayStation 4, Xbox, Xbox 360",
-                "Genres:": "Third-Person, Action, Sandbox, Shooter",
-                "Developer:": "Rockstar North",
-                "Publisher:": "Rockstar Games",
-                "NA:": "October 26, 2004",
-                "EU:": "October 29, 2004",
-                "JP:": "January 25, 2007",
-                "Updated:": "43 Mins Ago",
-                "Aliases:": "Grand Theft Auto: San Andreas HD, GTA SA"
+            "NintendoStore": {
+                "url": "https://store.nintendo.com/animal-crossing-new-horizons-us.html",
+                "ProductTitle": "Animal Crossing: New Horizons",
+                "ProductPrice": "$59.99",
+                "ProductSKU#": "109505"
             },
-            "ProductImg": "https://howlongtobeat.com/games/GTASABOX.jpg",
-            "ProductSoloTime": "None",
-            "ProductCoopTime": "None",
-            "ProductVsTime": "None",
-            "ProductMainStoryTime": "31 Hours",
-            "ProductMainExtrasTime": "47 Hours",
-            "ProductCompletionist": "82 Hours",
-            "ProductAllStylesTime": "43 Hours"
-        }
-    },
-    "Mortal Kombat XL": {
-        "Amazon": {
-            "ProductTitle": "Mortal Kombat XL - Playstation 4 (versi\u00f3n importada)",
-            "ProductPrice": "$25.00",
-            "ProductPlatform": "PlayStation 4"
-        },
-        "PlaystationStore": {
-            "ProductTitle": "Mortal Kombat XL",
-            "ProductPrice": "$19.99",
-            "ProductPlatform": "PS4"
-        },
-        "Metacritic": {
-            "ProductTitle": "MORTAL KOMBAT XL",
-            "ProductPlatform": "PlayStation 4",
-            "ProductMetascore": "85",
-            "ProductUserScore": "7.7"
-        },
-        "HowLongToBeat": {
-            "ProductTitle": "None",
-            "ProductInfo": {
-                "description": "Mortal Kombat XL offers the ultimate Mortal Kombat X experience that includes the main game and all content featured in upcoming Kombat Pack 2.",
-                "Platforms:": "PC, PlayStation 4, Xbox One",
-                "Genre:": "Fighting",
-                "Developer:": "NetherRealm Studios",
-                "Publisher:": "Warner Bros. Interactive Entertainment",
-                "NA:": "March 01, 2016",
-                "Updated:": "1.5 Days Ago"
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/switch/animal-crossing-new-horizons",
+                "ProductTitle": "ANIMAL CROSSING: NEW HORIZONS",
+                "ProductPlatform": "Switch",
+                "ProductMetascore": "90",
+                "ProductUserScore": "5.5"
             },
-            "ProductImg": "https://howlongtobeat.com/games/34194_Mortal_Kombat_XL.jpg",
-            "ProductSoloTime": "None",
-            "ProductCoopTime": "None",
-            "ProductVsTime": "None",
-            "ProductMainStoryTime": "5\u00bd Hours",
-            "ProductMainExtrasTime": "15\u00bd Hours",
-            "ProductCompletionist": "50 Hours",
-            "ProductAllStylesTime": "8 Hours"
-        }
-    },
-    "Call of Duty: Modern Warfare": {
-        "Amazon": {
-            "ProductTitle": "Call of Duty: Modern Warfare (Xbox One)",
-            "ProductPrice": "$71.99",
-            "ProductPlatform": "Xbox One"
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=68240",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "Nook Inc. invites you to create your personal island paradise on a deserted island brimming with possibility.",
+                    "Platforms": "Nintendo Switch",
+                    "Genre": "Simulation",
+                    "Developer": "Nintendo",
+                    "Publisher": "Nintendo",
+                    "NA": "March 20, 2020",
+                    "EU": "March 20, 2020",
+                    "Updated": "19 Mins Ago"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/68240_Animal_Crossing_New_Horizons.jpg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "60\u00bd Hours",
+                "ProductMainExtrasTime": "120 Hours",
+                "ProductCompletionist": "355 Hours",
+                "ProductAllStylesTime": "85\u00bd Hours"
+            }
         },
-        "PlaystationStore": {
-            "ProductTitle": "Call of Duty\u00ae: Modern Warfare\u00ae",
-            "ProductPrice": "$59.99",
-            "ProductPlatform": "PS4"
-        },
-        "Metacritic": {
-            "ProductTitle": "CALL OF DUTY: MODERN WARFARE",
-            "ProductPlatform": "PlayStation 4",
-            "ProductMetascore": "80",
-            "ProductUserScore": "3.4"
-        },
-        "HowLongToBeat": {
-            "ProductTitle": "None",
-            "ProductInfo": {
-                "description": "The stakes have never been higher as players take on the role of lethal Tier One operators in a heart-racing saga that will affect the global balance of power. Call of Duty: Modern Warfare engulfs fans in an incredibly raw, gritty, provocative narrative that brings unrivaled intensity and shines a light on the changing nature of modern war. Developed by the studio that started it all, Infinity Ward delivers an epic reimagining of the iconic Modern Warfare\u00ae series from the ground up.",
-                "Platforms:": "PC, PlayStation 4, Xbox One",
-                "Genres:": "First-Person, Shooter",
-                "Developer:": "Infinity Ward",
-                "Publisher:": "Activision",
-                "NA:": "October 25, 2019",
-                "EU:": "October 25, 2019",
-                "Updated:": "1 Hour Ago"
+        "Grand Theft Auto: San Andreas": {
+            "Amazon": {
+                "url": "https://www.amazon.com/-/es/GTA-San-Andreas-Xbox-360/dp/B00ZUS11ZA/ref=sr_1_1?__mk_es_US=\u00c3\u2026M\u00c3\u2026\u00c5\u00bd\u00c3\u2022\u00c3\u2018&dchild=1&keywords=Grand+Theft+Auto+san+andreas&qid=1619287116&sr=8-1",
+                "ProductTitle": "GTA San Andreas (Xbox 360)",
+                "ProductPrice": "$18.20",
+                "ProductPlatform": "Xbox 360"
             },
-            "ProductImg": "https://howlongtobeat.com/games/63110_Call_of_Duty_Modern_Warfare.jpeg",
-            "ProductSoloTime": "None",
-            "ProductCoopTime": "None",
-            "ProductVsTime": "None",
-            "ProductMainStoryTime": "6 Hours",
-            "ProductMainExtrasTime": "9 Hours",
-            "ProductCompletionist": "13\u00bd Hours",
-            "ProductAllStylesTime": "7 Hours"
-        }
-    },
-    "Minecraft": {
-        "Amazon": {
-            "ProductTitle": "Minecraft: Java Edition for PC/Mac [Online Game Code]",
-            "ProductPrice": "$26.95",
-            "ProductPlatform": "Mac, Windows"
-        },
-        "PlaystationStore": {
-            "ProductTitle": "Minecraft",
-            "ProductPrice": "$19.99",
-            "ProductPlatform": "PS4"
-        },
-        "NintendoStore": {
-            "ProductTitle": "Minecraft",
-            "ProductPrice": "$29.99",
-            "ProductSKU#": "106679"
-        },
-        "Metacritic": {
-            "ProductTitle": "MINECRAFT",
-            "ProductPlatform": "PC",
-            "ProductMetascore": "93",
-            "ProductUserScore": "8.0"
-        },
-        "HowLongToBeat": {
-            "ProductTitle": "None",
-            "ProductInfo": {
-                "description": "Minecraft is a game about placing blocks to build anything you can imagine. At night monsters come out, make sure to build a shelter before that happens.",
-                "Platforms:": "Mobile, Nintendo 3DS, Nintendo Switch, PC, PlayStation 3, PlayStation 4, PlayStation Vita, Wii U, Xbox 360, Xbox One",
-                "Genres:": "First-Person, Third-Person, Virtual Reality, Action, Hack and Slash, Open World, Sandbox, Survival",
-                "Developer:": "Mojang",
-                "Publisher:": "Mojang",
-                "NA:": "November 18, 2011",
-                "EU:": "November 18, 2011",
-                "Updated:": "14 Mins Ago"
+            "PlaystationStore": {
+                "url": "https://store.playstation.com/en-us/product/UP1004-CUSA03506_00-SLUS209460000001",
+                "ProductTitle": "Grand Theft Auto: San Andreas\u00ae",
+                "ProductPrice": "$14.99",
+                "ProductPlatform": "PS4"
             },
-            "ProductImg": "https://howlongtobeat.com/games/256px-Minecraft_1.1_Title.png",
-            "ProductSoloTime": "71\u00bd Hours - 219 Hours",
-            "ProductCoopTime": "241 Hours",
-            "ProductVsTime": "304 Hours",
-            "ProductMainStoryTime": "None",
-            "ProductMainExtrasTime": "None",
-            "ProductCompletionist": "None",
-            "ProductAllStylesTime": "None"
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/playstation-2/grand-theft-auto-san-andreas",
+                "ProductTitle": "GRAND THEFT AUTO: SAN ANDREAS",
+                "ProductPlatform": "PlayStation 2",
+                "ProductMetascore": "95",
+                "ProductUserScore": "9.1"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=4073",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "Five years ago Carl Johnson escaped from the pressures of life in Los Santos, San Andreas... a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers.Now, it's the early 90s. Carl's got to go home. His mother has been murdered, his family has fallen apart and his childhood friends are all heading towards disaster.On his return to the neighborhood, a couple of corrupt cops frame him for homicide. CJ is forced on a journey that takes him across the entire state of San Andreas, to save his family and to take control of the streets.",
+                    "Platforms": "Mobile, PC, PlayStation 2, PlayStation 3, PlayStation 4, Xbox, Xbox 360",
+                    "Genres": "Third-Person, Action, Sandbox, Shooter",
+                    "Developer": "Rockstar North",
+                    "Publisher": "Rockstar Games",
+                    "NA": "October 26, 2004",
+                    "EU": "October 29, 2004",
+                    "JP": "January 25, 2007",
+                    "Updated": "30 Mins Ago",
+                    "Aliases": "Grand Theft Auto: San Andreas HD, GTA SA"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/GTASABOX.jpg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "31 Hours",
+                "ProductMainExtrasTime": "47 Hours",
+                "ProductCompletionist": "82 Hours",
+                "ProductAllStylesTime": "43 Hours"
+            }
+        },
+        "Mortal Kombat XL": {
+            "Amazon": {
+                "url": "https://www.amazon.com/-/es/Mortal-Kombat-XL-Playstation-versi%C3%B3n-importada/dp/B01BLE1CA0/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Mortal+Kombat+XL&qid=1619545784&sr=8-1",
+                "ProductTitle": "Mortal Kombat XL - Playstation 4 (versi\u00f3n importada)",
+                "ProductPrice": "$25.00",
+                "ProductPlatform": "PlayStation 4"
+            },
+            "PlaystationStore": {
+                "url": "https://store.playstation.com/en-us/product/UP1018-CUSA03589_00-MORTALKOMBATXL00",
+                "ProductTitle": "Mortal Kombat XL",
+                "ProductPrice": "$19.99",
+                "ProductPlatform": "PS4"
+            },
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/playstation-4/mortal-kombat-xl",
+                "ProductTitle": "MORTAL KOMBAT XL",
+                "ProductPlatform": "PlayStation 4",
+                "ProductMetascore": "85",
+                "ProductUserScore": "7.7"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=34194",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "Mortal Kombat XL offers the ultimate Mortal Kombat X experience that includes the main game and all content featured in upcoming Kombat Pack 2.",
+                    "Platforms": "PC, PlayStation 4, Xbox One",
+                    "Genre": "Fighting",
+                    "Developer": "NetherRealm Studios",
+                    "Publisher": "Warner Bros. Interactive Entertainment",
+                    "NA": "March 01, 2016",
+                    "Updated": "2.5 Days Ago"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/34194_Mortal_Kombat_XL.jpg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "5\u00bd Hours",
+                "ProductMainExtrasTime": "15\u00bd Hours",
+                "ProductCompletionist": "50 Hours",
+                "ProductAllStylesTime": "8 Hours"
+            }
+        },
+        "Call of Duty: Modern Warfare": {
+            "Amazon": {
+                "url": "https://www.amazon.com/-/es/Call-Duty-Modern-Warfare-Xbox-One/dp/B07S8XTFTS/ref=sr_1_1?__mk_es_US=\u00c3\u2026M\u00c3\u2026\u00c5\u00bd\u00c3\u2022\u00c3\u2018&dchild=1&keywords=Call+of+Duty%3A+Modern+Warfare&qid=1619222184&sr=8-1",
+                "ProductTitle": "Call of Duty: Modern Warfare (Xbox One)",
+                "ProductPrice": "$71.69",
+                "ProductPlatform": "Xbox One"
+            },
+            "PlaystationStore": {
+                "url": "https://store.playstation.com/en-us/product/UP0002-CUSA08829_00-CODMWTHEGAME0001",
+                "ProductTitle": "Call of Duty\u00ae: Modern Warfare\u00ae",
+                "ProductPrice": "$59.99",
+                "ProductPlatform": "PS4"
+            },
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/playstation-4/call-of-duty-modern-warfare",
+                "ProductTitle": "CALL OF DUTY: MODERN WARFARE",
+                "ProductPlatform": "PlayStation 4",
+                "ProductMetascore": "80",
+                "ProductUserScore": "3.4"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=63110",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "The stakes have never been higher as players take on the role of lethal Tier One operators in a heart-racing saga that will affect the global balance of power. Call of Duty: Modern Warfare engulfs fans in an incredibly raw, gritty, provocative narrative that brings unrivaled intensity and shines a light on the changing nature of modern war. Developed by the studio that started it all, Infinity Ward delivers an epic reimagining of the iconic Modern Warfare\u00ae series from the ground up.",
+                    "Platforms": "PC, PlayStation 4, Xbox One",
+                    "Genres": "First-Person, Shooter",
+                    "Developer": "Infinity Ward",
+                    "Publisher": "Activision",
+                    "NA": "October 25, 2019",
+                    "EU": "October 25, 2019",
+                    "Updated": "27 Mins Ago"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/63110_Call_of_Duty_Modern_Warfare.jpeg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "6 Hours",
+                "ProductMainExtrasTime": "9 Hours",
+                "ProductCompletionist": "13\u00bd Hours",
+                "ProductAllStylesTime": "7 Hours"
+            }
+        },
+        "Minecraft": {
+            "Amazon": {
+                "url": "https://www.amazon.com/-/es/dp/B010KYDNDG/ref=sr_1_3?__mk_es_US=\u00c3\u2026M\u00c3\u2026\u00c5\u00bd\u00c3\u2022\u00c3\u2018&dchild=1&keywords=Minecraft&qid=1619222234&sr=8-3",
+                "ProductTitle": "Minecraft: Java Edition for PC/Mac [Online Game Code]",
+                "ProductPrice": "$26.95",
+                "ProductPlatform": "Mac, Windows"
+            },
+            "PlaystationStore": {
+                "url": "https://store.playstation.com/en-us/product/UP4433-CUSA00744_00-MINECRAFTPS40001",
+                "ProductTitle": "Minecraft",
+                "ProductPrice": "$19.99",
+                "ProductPlatform": "PS4"
+            },
+            "NintendoStore": {
+                "url": "https://store.nintendo.com/minecraft.html",
+                "ProductTitle": "Minecraft",
+                "ProductPrice": "$29.99",
+                "ProductSKU#": "106679"
+            },
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/pc/minecraft",
+                "ProductTitle": "MINECRAFT",
+                "ProductPlatform": "PC",
+                "ProductMetascore": "93",
+                "ProductUserScore": "8.0"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=6064",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "Minecraft is a game about placing blocks to build anything you can imagine. At night monsters come out, make sure to build a shelter before that happens.",
+                    "Platforms": "Mobile, Nintendo 3DS, Nintendo Switch, PC, PlayStation 3, PlayStation 4, PlayStation Vita, Wii U, Xbox 360, Xbox One",
+                    "Genres": "First-Person, Third-Person, Virtual Reality, Action, Hack and Slash, Open World, Sandbox, Survival",
+                    "Developer": "Mojang",
+                    "Publisher": "Mojang",
+                    "NA": "November 18, 2011",
+                    "EU": "November 18, 2011",
+                    "Updated": "9.5 Hours Ago"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/256px-Minecraft_1.1_Title.png",
+                "ProductSoloTime": "71\u00bd Hours - 219 Hours",
+                "ProductCoopTime": "241 Hours",
+                "ProductVsTime": "304 Hours",
+                "ProductMainStoryTime": "None",
+                "ProductMainExtrasTime": "None",
+                "ProductCompletionist": "None",
+                "ProductAllStylesTime": "None"
+            }
+        },
+        "Cyberpunk 2077": {
+            "Amazon": {
+                "url": "https://www.amazon.com/Cyberpunk-2077-PlayStation-4/dp/B08SPZRVGQ/ref=sr_1_2?dchild=1&keywords=Cyberpunk+2077&qid=1619900403&sr=8-2",
+                "ProductTitle": "Cyberpunk 2077 - PlayStation 4",
+                "ProductPrice": "$43.45",
+                "ProductPlatform": "None"
+            },
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/pc/cyberpunk-2077",
+                "ProductTitle": "CYBERPUNK 2077",
+                "ProductPlatform": "PC",
+                "ProductMetascore": "85",
+                "ProductUserScore": "7.1"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=2127",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.",
+                    "Platforms": "Google Stadia, PC, PlayStation 4, Xbox One",
+                    "Genres": "First-Person, Action, Role-Playing, Shooter",
+                    "Developer": "CD Projekt RED",
+                    "Publisher": "CD Projekt",
+                    "NA": "December 10, 2020",
+                    "EU": "December 10, 2020",
+                    "JP": "December 10, 2020",
+                    "Updated": "6 Mins Ago"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/Cyberpunk-2077-2.jpg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "22 Hours",
+                "ProductMainExtrasTime": "58 Hours",
+                "ProductCompletionist": "100 Hours",
+                "ProductAllStylesTime": "60 Hours"
+            }
+        },
+        "The Legend of Zelda: Breath of the Wild": {
+            "Amazon": {
+                "url": "https://www.amazon.com/Legend-Zelda-Breath-Wild-switch-Nintendo/dp/B01N1083WZ/ref=sr_1_2?dchild=1&keywords=The+Legend+of+Zelda%3A+Breath+of+the+Wild&qid=1619900539&sr=8-2",
+                "ProductTitle": "The Legend of Zelda: Breath of the Wild (Nintendo Switch)",
+                "ProductPrice": "$59.45",
+                "ProductPlatform": "Nintendo Switch"
+            },
+            "NintendoStore": {
+                "url": "https://store.nintendo.com/the-legend-of-zelda-breath-of-the-wild-nintendo-switch-usa.html",
+                "ProductTitle": "The Legend of Zelda: Breath of the Wild",
+                "ProductPrice": "$59.99",
+                "ProductSKU#": "105208"
+            },
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild",
+                "ProductTitle": "THE LEGEND OF ZELDA: BREATH OF THE WILD",
+                "ProductPlatform": "Switch",
+                "ProductMetascore": "97",
+                "ProductUserScore": "8.7"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=38019",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this stunning open-air adventure.",
+                    "Platforms": "Nintendo Switch, Wii U",
+                    "Genres": "Third-Person, Action, Adventure, Open World",
+                    "Developer": "Nintendo EPD",
+                    "Publisher": "Nintendo",
+                    "NA": "March 03, 2017",
+                    "EU": "March 03, 2017",
+                    "JP": "March 03, 2017",
+                    "Updated": "21 Mins Ago"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/38019_The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "50 Hours",
+                "ProductMainExtrasTime": "96 Hours",
+                "ProductCompletionist": "188 Hours",
+                "ProductAllStylesTime": "90\u00bd Hours"
+            }
+        },
+        "Final Fantasy VII Remake": {
+            "Amazon": {
+                "url": "https://www.amazon.com/FINAL-FANTASY-VII-REMAKE-playstation-4/dp/B07SV4S75P/ref=sr_1_3?dchild=1&keywords=Final+Fantasy+VII+Remake&qid=1619900788&sr=8-3",
+                "ProductTitle": "FINAL FANTASY VII REMAKE (PS4)",
+                "ProductPrice": "$39.99",
+                "ProductPlatform": "PlayStation 4"
+            },
+            "PlaystationStore": {
+                "url": "https://store.playstation.com/en-us/product/UP0082-CUSA07211_00-FFVIIREMAKE00000",
+                "ProductTitle": "FINAL FANTASY VII REMAKE",
+                "ProductPrice": "$59.99",
+                "ProductPlatform": "PS4"
+            },
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/playstation-4/final-fantasy-vii-remake",
+                "ProductTitle": "FINAL FANTASY VII REMAKE",
+                "ProductPlatform": "PlayStation 4",
+                "ProductMetascore": "87",
+                "ProductUserScore": "8.1"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=57686",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "What begins as a rebellion against an evil corporation becomes much more, and what erupts goes beyond imagination. The story of this first, standalone game in the Final Fantasy VII Remake project covers up to the party's escape from Midgar and goes deeper into the events occurring in the city than the original Final Fantasy VII.",
+                    "Platforms": "PlayStation 4",
+                    "Genres": "Third-Person, Action, Adventure, Role-Playing",
+                    "Developer": "Square Enix",
+                    "Publisher": "Square Enix",
+                    "NA": "April 10, 2020",
+                    "EU": "April 10, 2020",
+                    "JP": "April 10, 2020",
+                    "Updated": "1 Hour Ago",
+                    "Aliases": "Final Fantasy 7 Remake, Final Fantasy VII (2020)"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/57686_Final_Fantasy_VII_Remake.jpg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "33\u00bd Hours",
+                "ProductMainExtrasTime": "42\u00bd Hours",
+                "ProductCompletionist": "84\u00bd Hours",
+                "ProductAllStylesTime": "43\u00bd Hours"
+            }
+        },
+        "Untitled Goose Game": {
+            "Amazon": {
+                "url": "https://www.amazon.com/-/es/Untitled-Goose-Game-Nintendo-Switch/dp/B08DB49XRR/ref=pd_sbs_1?pd_rd_w=tapTV&pf_rd_p=2419a049-62bf-452e-b0d0-ca5b7e35a7b4&pf_rd_r=ABYQPNVGN8HFZ5R85W99&pd_rd_r=26bb0835-a236-4e96-926b-24f2f17f108d&pd_rd_wg=nkcvj&pd_rd_i=B08DB49XRR&psc=1",
+                "ProductTitle": "Untitled Goose Game (Nintendo Switch)",
+                "ProductPrice": "$38.98",
+                "ProductPlatform": "Nintendo Switch"
+            },
+            "PlaystationStore": {
+                "url": "https://store.playstation.com/es-cr/product/UP3971-CUSA23079_00-HONKHONKHONKHONK",
+                "ProductTitle": "Untitled Goose Game",
+                "ProductPrice": "US$19.99",
+                "ProductPlatform": "PS4"
+            },
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/xbox-one/untitled-goose-game",
+                "ProductTitle": "UNTITLED GOOSE GAME",
+                "ProductPlatform": "Xbox One",
+                "ProductMetascore": "81",
+                "ProductUserScore": "7.5"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=66086",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "It's a lovely morning in the village and you are a horrible goose.",
+                    "Platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One",
+                    "Developer": "House House",
+                    "Publisher": "Panic",
+                    "NA": "September 20, 2019",
+                    "EU": "September 20, 2019",
+                    "JP": "September 20, 2019",
+                    "Updated": "14 Hours Ago"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/66086_Untitled_Goose_Game.jpg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "3 Hours",
+                "ProductMainExtrasTime": "4 Hours",
+                "ProductCompletionist": "5 Hours",
+                "ProductAllStylesTime": "3\u00bd Hours"
+            }
+        },
+        "The Witcher 3: Wild Hunt": {
+            "Amazon": {
+                "url": "https://www.amazon.com/Witcher-Wild-Hunt-Complete-PlayStation-4/dp/B01K6010FM/ref=sr_1_1?dchild=1&keywords=The+Witcher+3%3A+Wild+Hunt&qid=1619900917&sr=8-1",
+                "ProductTitle": "Witcher 3: Wild Hunt Complete Edition - PlayStation 4 Complete Edition",
+                "ProductPrice": "$35.99",
+                "ProductPlatform": "PlayStation 4"
+            },
+            "PlaystationStore": {
+                "url": "https://store.playstation.com/en-us/product/UP4497-CUSA00527_00-0000000000000002",
+                "ProductTitle": "The Witcher 3: Wild Hunt",
+                "ProductPrice": "$7.99",
+                "ProductPlatform": "PS4"
+            },
+            "Metacritic": {
+                "url": "https://www.metacritic.com/game/playstation-4/the-witcher-3-wild-hunt",
+                "ProductTitle": "THE WITCHER 3: WILD HUNT",
+                "ProductPlatform": "PlayStation 4",
+                "ProductMetascore": "92",
+                "ProductUserScore": "9.2"
+            },
+            "HowLongToBeat": {
+                "url": "https://howlongtobeat.com/game?id=10270",
+                "ProductTitle": "None",
+                "ProductInfo": {
+                    "description": "In The Witcher 3 an ancient evil stirs, awakening. An evil that sows terror and abducts the young. An evil whose name is spoken only in whispers: the Wild Hunt. Led by four wraith commanders, this ravenous band of phantoms is the ultimate predator and has been for centuries. Its quarry: humans.",
+                    "Platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One",
+                    "Genres": "Third-Person, Action, Open World, Role-Playing",
+                    "Developer": "CD Projekt RED",
+                    "Publishers": "CD Projekt, Warner Bros. Interactive Entertainment",
+                    "NA": "May 19, 2015",
+                    "EU": "May 19, 2015",
+                    "JP": "May 19, 2015",
+                    "Updated": "1 Hour Ago"
+                },
+                "ProductImg": "https://howlongtobeat.com/games/10270_The_Witcher_3_Wild_Hunt.jpg",
+                "ProductSoloTime": "None",
+                "ProductCoopTime": "None",
+                "ProductVsTime": "None",
+                "ProductMainStoryTime": "51 Hours",
+                "ProductMainExtrasTime": "102 Hours",
+                "ProductCompletionist": "172 Hours",
+                "ProductAllStylesTime": "101 Hours"
+            }
         }
     }
 }

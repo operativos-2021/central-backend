@@ -18,25 +18,25 @@ class games(Resource):
         # f = open(game_list_path)
         # games_data = json.load(f)
         
-        keys = list(games_data["data"].keys())
-        pc_limit = 8
-        start_index = 0
-        end_index = 0
-        while True:
-            if quantity<=pc_limit:
-                end_index += quantity
-                quantity = 0
-            else:
-                end_index += pc_limit
-                quantity -= pc_limit
-            keys_to_scrape = keys[start_index:end_index]
-            # print("Scraping del " + str(start_index) + " hasta el " + str(end_index))
-            a_pool = multiprocessing.Pool()
-            a_pool.map(doScraping,keys_to_scrape)
-            if(quantity==0):
-                break
-            else:
-                start_index +=pc_limit
+        # keys = list(games_data["data"].keys())
+        # pc_limit = 8
+        # start_index = 0
+        # end_index = 0
+        # while True:
+        #     if quantity<=pc_limit:
+        #         end_index += quantity
+        #         quantity = 0
+        #     else:
+        #         end_index += pc_limit
+        #         quantity -= pc_limit
+        #     keys_to_scrape = keys[start_index:end_index]
+        #     # print("Scraping del " + str(start_index) + " hasta el " + str(end_index))
+        #     a_pool = multiprocessing.Pool()
+        #     a_pool.map(doScraping,keys_to_scrape)
+        #     if(quantity==0):
+        #         break
+        #     else:
+        #         start_index +=pc_limit
         # doScraping(quantity)
         file = open(scrape_result_path)
         
