@@ -12,4 +12,4 @@ api.add_resource(games,"/games/<int:quantity>")
 api.add_resource(email,"/email/")
 
 if __name__ == "__main__":
-        app. run(debug=True) #app.run(debug=False)
+        app. run(debug=False) #app.run(debug=False)

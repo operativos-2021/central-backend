@@ -57,12 +57,12 @@
             "Metacritic": "https://www.metacritic.com/game/playstation-4/final-fantasy-vii-remake",
             "HowLongToBeat": "https://howlongtobeat.com/game?id=57686"
         },
-        "Hades": {
-            "Amazon": "https://www.amazon.com/Hades-Limited-Nintendo-Switch/dp/B08X2K6B1Z/ref=pd_sbs_2?pd_rd_w=MSfQn&pf_rd_p=2419a049-62bf-452e-b0d0-ca5b7e35a7b4&pf_rd_r=D279XN9KC2QT1Z7BPSSQ&pd_rd_r=f19ff8f9-f493-43dc-bc02-5e10080bea0b&pd_rd_wg=SB6HW&pd_rd_i=B08X2K6B1Z&psc=1",
-            "PlaystationStore": "None",
-            "NintendoStore": "https://store.nintendo.com/hades-physical.html",
-            "Metacritic": "https://www.metacritic.com/game/switch/hades",
-            "HowLongToBeat": "https://howlongtobeat.com/game?id=62941"
+        "Untitled Goose Game": {
+            "Amazon": "https://www.amazon.com/-/es/Untitled-Goose-Game-Nintendo-Switch/dp/B08DB49XRR/ref=pd_sbs_1?pd_rd_w=tapTV&pf_rd_p=2419a049-62bf-452e-b0d0-ca5b7e35a7b4&pf_rd_r=ABYQPNVGN8HFZ5R85W99&pd_rd_r=26bb0835-a236-4e96-926b-24f2f17f108d&pd_rd_wg=nkcvj&pd_rd_i=B08DB49XRR&psc=1",
+            "PlaystationStore": "https://store.playstation.com/es-cr/product/UP3971-CUSA23079_00-HONKHONKHONKHONK",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/xbox-one/untitled-goose-game",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=66086"
         },
         "The Witcher 3: Wild Hunt": {
             "Amazon": "https://www.amazon.com/Witcher-Wild-Hunt-Complete-PlayStation-4/dp/B01K6010FM/ref=sr_1_1?dchild=1&keywords=The+Witcher+3%3A+Wild+Hunt&qid=1619900917&sr=8-1",
