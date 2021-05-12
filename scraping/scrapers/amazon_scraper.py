@@ -27,6 +27,7 @@ def getAmazonProductTitle(driver):
         title = driver.find_element_by_xpath('//*[@id="productTitle"]').text
         return title
     except NoSuchElementException:
+        print("AMAZON TITLE NONE")
         return str(None)
 
 def getAmazonProductPrice(driver):
@@ -43,6 +44,7 @@ def getAmazonProductPrice(driver):
                 price = driver.find_element_by_xpath('//*[@id="olp_feature_div"]/div[2]/span/a/span[2]').text
                 return '$'+price[4:]
         except NoSuchElementException:
+            print("AMAZON PRICE NONE")
             price = 'None'
         
         tries += 1
@@ -55,4 +57,5 @@ def getAmazonProductPlatform(driver):
         platform = driver.find_element_by_xpath('//*[@id="platformInformation_feature_div"]').text
         return platform[13:]
     except NoSuchElementException:
+        print("AMAZON PLATAFORM NONE")
         return str(None)

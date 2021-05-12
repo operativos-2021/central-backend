@@ -141,15 +141,15 @@ f = open(game_list_path)
 games_data = json.load(f)
 
 def scrapWebsite(page, link):
-    """if page == "Amazon":
+    if page == "Amazon":
         return scrapAmazon(link)
     elif page == "PlaystationStore":
         return scrapPlaystation(link)
     elif page == "NintendoStore":
         return scrapNintendo(link)
     elif page == "Metacritic":
-        return scrapMetacritic(link)"""
-    if page == "HowLongToBeat":
+        return scrapMetacritic(link)
+    elif page == "HowLongToBeat":
         return scrapHLTB(link)
     
     
