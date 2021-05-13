@@ -5,7 +5,8 @@ import os
 
 actual_path = os.path.dirname(os.path.abspath(__file__))
 
-scrape_result_path = actual_path + "/scrape_result.json"
+scrape_result_path = actual_path.replace("load_balance","scraping/scrape_result.json")
+
 def getGamesFromBackend(url):
     response = requests.request("GET", url)
     data = json.loads(response.text)
