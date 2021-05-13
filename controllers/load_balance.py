@@ -44,7 +44,10 @@ class load_balance(Resource):
         print("Balanceo de cargas, rango: " + str(games_range))
         actual_path = os.path.dirname(os.path.abspath(__file__))
         scrape_result_path = actual_path.replace("controllers","scraping/scrape_result.json")
-        game_list_path = actual_path.replace("controllers","scraping/game_list.json")
+
+        with open(scrape_result_path, "w") as outfile: 
+                json.dump({}, outfile)
+
         game_range_list = games_range.split("::")
         if int(game_range_list[0])==0:
             print("Soy el BackendPrincipal")
