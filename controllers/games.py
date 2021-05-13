@@ -19,7 +19,7 @@ class games(Resource):
         games_data = json.load(f)
         
         keys = list(games_data["data"].keys())
-        pc_limit = 12
+        pc_limit = 8
         start_index = 0
         end_index = 0
         while True:
