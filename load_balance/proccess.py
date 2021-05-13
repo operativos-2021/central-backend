@@ -9,10 +9,11 @@ scrape_result_path = actual_path.replace("load_balance","scraping/scrape_result.
 
 def getGamesFromBackend(url):
     response = requests.request("GET", url)
-    data = json.loads(response.text)
-    print(data["data"])
+    body = json.loads(response.text)
+    print(body)
+    print(body["data"])
     with open(scrape_result_path, "r+") as file:
         data = json.load(file)
-        data.update({data["data"]})
+        data.update(body["data"])
         file.seek(0)
         json.dump(data, file)

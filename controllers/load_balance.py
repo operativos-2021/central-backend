@@ -54,7 +54,7 @@ class load_balance(Resource):
             game_range_1 = "-1::" + str(int(game_range_list[1])//2)
             game_range_2 = str(int(game_range_list[1])//2) +"::" + game_range_list[1]
             a_pool = multiprocessing.Pool()
-            a_pool.map(getGamesFromBackend,["http://localhost:5001/load_balance/"+game_range_1])#,"http://localhost:5002/load_balance/"+game_range_2])
+            a_pool.map(getGamesFromBackend,["http://localhost:5001/load_balance/"+game_range_1,"http://localhost:5002/load_balance/"+game_range_2])
         else:
             key_from = int(game_range_list[0])
             key_to = int(game_range_list[1])
