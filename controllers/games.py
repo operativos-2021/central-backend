@@ -1,15 +1,18 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse, abort
-from scraping.webscrapy.webscraper import doScraping
+from scraping.webscraper import doScraping
+
 import multiprocessing
 import os
 import json
+
+
 class games(Resource):
-    def get(self,quantity):
+    def get(self, quantity):
         print("Obtener juegos: " + str(quantity))
         actual_path = os.path.dirname(os.path.abspath(__file__))
-        scrape_result_path = actual_path.replace("controllers","scraping/webscrapy/scrape_result.json")
-        game_list_path = actual_path.replace("controllers","scraping/webscrapy/game_list.json")
+        scrape_result_path = actual_path.replace("controllers","scraping/scrape_result.json")
+        game_list_path = actual_path.replace("controllers","scraping/game_list.json")
         with open(scrape_result_path, "w") as outfile: 
             json.dump({}, outfile)
     

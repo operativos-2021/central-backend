@@ -1,10 +1,11 @@
-
 from flask_restful import  Resource
-from scraping.webscrapy.webscraper import doScraping
+from scraping.webscraper import doScraping
 from load_balance.proccess import getGamesFromBackend
+
 import multiprocessing
 import os
 import json
+
 
 class load_balance(Resource):
         
