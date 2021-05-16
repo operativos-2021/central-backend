@@ -16,8 +16,8 @@ class games(Resource):
         with open(scrape_result_path, "w") as outfile: 
             json.dump({}, outfile)
     
-        # f = open(game_list_path)
-        # games_data = json.load(f)
+        f = open(game_list_path)
+        games_data = json.load(f)
         
         # keys = list(games_data["data"].keys())
         # pc_limit = 8

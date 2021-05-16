@@ -14,7 +14,6 @@ scrape_result_path = actual_path + "/scrape_result.json"
 game_list_path = actual_path + "/game_list.json"
 
 
-
 # def doScraping(game):
 #     with open(scrape_result_path, "r+") as file:
 #         data = json.load(file)
@@ -22,8 +21,6 @@ game_list_path = actual_path + "/game_list.json"
 #         file.seek(0)
 #         json.dump(data, file)
         
-
-
 import crochet
 crochet.setup()
 
