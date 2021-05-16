@@ -13,11 +13,17 @@ class games(Resource):
         actual_path = os.path.dirname(os.path.abspath(__file__))
         scrape_result_path = actual_path.replace("controllers","scraping/scrape_result.json")
         game_list_path = actual_path.replace("controllers","scraping/game_list.json")
+<<<<<<< HEAD
         with open(scrape_result_path, "w") as outfile: 
             json.dump({}, outfile)
+=======
+
+        # with open(scrape_result_path, "w") as outfile: 
+        #     json.dump({}, outfile)
+>>>>>>> 3dc51cd4227053bdf6fba61d9ecb223862d103ed
     
-        f = open(game_list_path)
-        games_data = json.load(f)
+        # f = open(game_list_path)
+        # games_data = json.load(f)
         
         # keys = list(games_data["data"].keys())
         # pc_limit = 8
@@ -38,8 +44,12 @@ class games(Resource):
         #         break
         #     else:
         #         start_index +=pc_limit
+<<<<<<< HEAD
         keys = list(games_data["data"].keys())
         doScraping(keys[0])
+=======
+        # doScraping(quantity)
+>>>>>>> 3dc51cd4227053bdf6fba61d9ecb223862d103ed
         file = open(scrape_result_path)
         
         data = json.load(file)
