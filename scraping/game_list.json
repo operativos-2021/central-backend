@@ -192,7 +192,7 @@
         },
         "Subnautica": {
             "Amazon": "https://www.amazon.com/Subnautica-PlayStation-4/dp/B07FF4X2RT/ref=sr_1_2?dchild=1&keywords=Subnautica&qid=1619902617&sr=8-2",
-            "PlaystationStore": "https://store.playstation.com/en-us/product/UP5245-CUSA13529_00-SUBNAUTICA000000",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP5245-PPSA02452_00-6063362694848820",
             "NintendoStore": "None",
             "Metacritic": "https://www.metacritic.com/game/pc/subnautica",
             "HowLongToBeat": "https://howlongtobeat.com/game?id=23740"
@@ -401,18 +401,305 @@
             "HowLongToBeat": "https://howlongtobeat.com/game?id=78187"
         },
         "Super Mario Maker 2": {
-            "Amazon": "https://www.amazon.com/Super-Mario-Maker-2-Nintendo-Switch/dp/B07NSSHPFN/ref=sr_1_2?dchild=1&keywords=Super+Mario+Maker+2&qid=1619906271&sr=8-2",
+            "Amazon": "https://www.amazon.com/-/es/Nintendo-Selects-Super-Mario-Maker-3DS/dp/B07D8549G1/ref=sr_1_3?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Super+Mario+Maker+2&qid=1621116041&sr=8-3",
             "PlaystationStore": "None",
             "NintendoStore": "https://store.nintendo.com/super-mario-maker-2.html",
             "Metacritic": "https://www.metacritic.com/game/switch/super-mario-maker-2",
             "HowLongToBeat": "https://howlongtobeat.com/game?id=65004"
         },
         "Fallout 4": {
-            "Amazon": "https://www.amazon.com/Fallout-4-PlayStation/dp/B00YQ2KCWO/ref=sr_1_3?dchild=1&keywords=Fallout+4&qid=1619906394&sr=8-3",
+            "Amazon": "https://www.amazon.com/-/es/Bethesda-Softworks-Fallout-PS4-Videojuego/dp/B01LWA71DT/ref=pd_sbs_2?pd_rd_w=w0RjE&pf_rd_p=2419a049-62bf-452e-b0d0-ca5b7e35a7b4&pf_rd_r=7DMN8ZW5CWZZGPVQKQRW&pd_rd_r=fa71f51d-b340-49f1-b470-03a38fb4edde&pd_rd_wg=vkzEw&pd_rd_i=B01LWA71DT&psc=1",
             "PlaystationStore": "https://store.playstation.com/en-us/product/UP1003-CUSA02557_00-FALLOUT4FULLGAME",
             "NintendoStore": "None",
             "Metacritic": "https://www.metacritic.com/game/playstation-4/fallout-4",
             "HowLongToBeat": "https://howlongtobeat.com/game?id=26729"
+        },
+        "Battlefield 1": {
+            "Amazon": "https://www.amazon.com/-/es/Battlefield-1-PS4/dp/B07BR6TT26/ref=sr_1_4?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Battlefield+1&qid=1620322561&sr=8-4",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0006-CUSA02429_00-BATTLEFIELD01000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/battlefield-1",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=38001"
+        },
+        "Horizon Zero Dawn: Complete Edition": {
+            "Amazon": "https://www.amazon.com/-/es/Horizon-Zero-Dawn-Complete-Hits-PlayStation/dp/B07STWQ38X/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Horizon+Zero+Dawn&qid=1620322756&sr=8-1",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP9000-CUSA10237_00-HRZCE00000000000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/pc/horizon-zero-dawn-complete-edition",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=53247"
+        },
+        "ARMS": {
+            "Amazon": "https://www.amazon.com/-/es/ARMS-Nintendo-Switch/dp/B0773JQLL3/ref=pd_sbs_1?pd_rd_w=uF2Rs&pf_rd_p=2419a049-62bf-452e-b0d0-ca5b7e35a7b4&pf_rd_r=0JFD10ZKP8GM32YQTQYG&pd_rd_r=0bf873b4-943b-4421-8c53-47f1ca39d693&pd_rd_wg=VgJDD&pd_rd_i=B0773JQLL3&psc=1",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/arms-physical.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/arms",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=42834"
+        },
+        "No Man's Sky": {
+            "Amazon": "https://www.amazon.com/-/es/No-Mans-Sky-Xbox-One/dp/B07CB6YFYC/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=No+Man%27s+Sky&qid=1620323104&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP2034-PPSA02110_00-NOMANSSKYHG00001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/xbox-one/no-mans-sky",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=20074"
+        },
+        "Grand Theft Auto: Vice City": {
+            "Amazon": "https://www.amazon.com/-/es/Grand-Theft-Auto-Vice-City-PS2/dp/B00006BXBV/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Grand+Theft+Auto%3A+Vice+City&qid=1620323230&sr=8-1",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP1004-CUSA03509_00-SLUS205520000001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-2/grand-theft-auto-vice-city",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=4075"
+        },
+        "Grand Theft Auto III": {
+            "Amazon": "https://www.amazon.com/-/es/Grand-Theft-Auto-3/dp/B00005O0I2/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Grand+Theft+Auto+III&qid=1620323387&sr=8-1",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP1004-CUSA03508_00-SLUS200620000001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-2/grand-theft-auto-iii",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=4061"
+        },
+        "Mortal Kombat 11 Ultimate": {
+            "Amazon": "https://www.amazon.com/-/es/Mortal-Kombat-11-Ultimate-Xbox-X/dp/B08KVH8N5S/ref=sr_1_4?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Mortal+Kombat+11&qid=1620323442&sr=8-4",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP1018-PPSA01617_00-MK11ULTIMATEKOLL",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-5/mortal-kombat-11-ultimate",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=85473"
+        },
+        "Dead by Daylight": {
+            "Amazon": "https://www.amazon.com/-/es/Dead-Daylight-Definitive-Nintendo-Switch/dp/B07TJWSZQT/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Dead+by+Daylight&qid=1620323625&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP3509-PPSA02048_00-DEADBYDAYLIGHT00",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/pc/dead-by-daylight",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=37986"
+        },
+        "Yakuza 0": {
+            "Amazon": "https://www.amazon.com/-/es/Yakuza-0-PlayStation-Hits-PS4/dp/B07DX832QV/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Yakuza+0&qid=1620323755&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0177-CUSA05070_00-YAKUZA0AMERICA00",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/yakuza-0",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=43056   "
+        },
+        "Bayonetta & Vanquish": {
+            "Amazon": "https://www.amazon.com/-/es/Bayonetta-Vanquish-10th-Anniversary-Bundle-PlayStation/dp/B084DD9113/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Bayonetta+1&qid=1620323988&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0177-CUSA16113_00-BAYOVANQUISH10RE",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/bayonetta-vanquish",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=72802"
+        },
+        "Yakuza: Like a Dragon": {
+            "Amazon": "https://www.amazon.com/-/es/Yakuza-Like-Dragon-PlayStation-5/dp/B08VJNMWR8/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Yakuza%3A+Like+a+Dragon&qid=1620324122&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0177-PPSA02383_00-LIKEADRAGON00000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-5/yakuza-like-a-dragon",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=71931"
+        },
+        "Battlefield V": {
+            "Amazon": "https://www.amazon.com/-/es/Battlefield-V-PS4/dp/B07D7FTVKH/ref=sr_1_11?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Battlefield+V&qid=1620324354&sr=8-11",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0006-CUSA08724_00-BATTLEFIELDV0000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/pc/battlefield-v",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=57352"
+        },
+        "Wolfenstein: The New Order": {
+            "Amazon": "https://www.amazon.com/-/es/Wolfenstein-New-Order-PS4/dp/B079SGBHQH/ref=sr_1_3?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Wolfenstein%3A+The+New+Order&qid=1620324458&sr=8-3",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP1003-CUSA00314_00-WOLFENSTEIN00001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/pc/wolfenstein-the-new-order",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=16886"
+        },
+        "Metro Exodus": {
+            "Amazon": "https://www.amazon.com/-/es/Metro-Exodus-Xbox-One/dp/B072K2K84W/ref=sr_1_3?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Metro+Exodus&qid=1620324560&sr=8-3",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP2047-CUSA11408_00-METROEXODUS00000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/pc/metro-exodus",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=46401"
+        },
+        "Devil May Cry 5": {
+            "Amazon": "https://www.amazon.com/-/es/Devil-May-Cry-5-Xbox-One/dp/B07DJW7B6T/ref=sr_1_5?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Devil+May+Cry+5&qid=1620328213&sr=8-5",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0102-CUSA08216_00-DMC5000000000001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/devil-may-cry-5",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=57514"
+        },
+        "Far Cry 5": {
+            "Amazon": "https://www.amazon.com/-/es/Far-Cry-5-XBOX-1/dp/B07DMZFHYB/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Far+Cry+5&qid=1620328261&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0001-CUSA05904_00-FARCRY5GAME00000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/far-cry-5",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=46093"
+        },
+        "Far Cry 4": {
+            "Amazon": "https://www.amazon.com/-/es/Far-Cry-4-PlayStation/dp/B00L8XUB1G/ref=sr_1_4?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Far+Cry+4&qid=1620328406&sr=8-4",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0001-CUSA00496_00-FC4GAMEPS4000001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/far-cry-4",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=19310"
+        },
+        "Hitman 2": {
+            "Amazon": "https://www.amazon.com/-/es/HITMAN-2-xbox_one/dp/B07DLLF1CV/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Hitman+2&qid=1620328494&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP4572-CUSA12421_00-HITMANSTANDARD00",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/hitman-2",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=57478"
+        },
+        "Yakuza 3": {
+            "Amazon": "https://www.amazon.com/-/es/Yakuza-3-Playstation/dp/B0030GBSUC/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Yakuza+3&qid=1620328646&sr=8-1",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0177-CUSA15325_00-YAKUZA3HD0000000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-3/yakuza-3",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=11423"
+        },
+        "Rayman Legends": {
+            "Amazon": "https://www.amazon.com/-/es/Rayman-Legends-Xbox-One-Standard/dp/B00H5V9SLE/ref=sr_1_4?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Rayman+Legends&qid=1620328744&sr=8-4",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0001-CUSA00069_00-RAYMANLEGENDS001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/rayman-legends",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=12655"
+        },
+        "Call of Duty: Modern Warfare 2": {
+            "Amazon": "https://www.amazon.com/-/es/Call-Duty-Modern-Warfare-Playstation/dp/B00269QLH4/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Call+of+Duty%3A+Modern+Warfare+2&qid=1620328817&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0002-CUSA09249_00-CODMW2RSTANDARD1",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/xbox-360/call-of-duty-modern-warfare-2",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=1477"
+        },
+        "The Last Guardian": {
+            "Amazon": "https://www.amazon.com/-/es/Last-Guardian/dp/B00ZG1RYQ6/ref=pd_sbs_3?pd_rd_w=rWuVc&pf_rd_p=2419a049-62bf-452e-b0d0-ca5b7e35a7b4&pf_rd_r=Y0E6Y4SADZHV8RP5N64F&pd_rd_r=4ed0af96-0e9a-49a8-9653-1a3b0c636b5a&pd_rd_wg=qVPQ5&pd_rd_i=B00ZG1RYQ6&psc=1",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP9000-CUSA03627_00-LASTGUARDIANUS00",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/the-last-guardian",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=9995"
+        },
+        "Call of Duty 4: Modern Warfare": {
+            "Amazon": "https://www.amazon.com/-/es/Call-Duty-Modern-Warfare-Xbox-360/dp/B000TG530M/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Call+of+Duty+4%3A+Modern+Warfare&qid=1620328995&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0002-CUSA03522_00-CODMWRTHEGAME001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/xbox-360/call-of-duty-4-modern-warfare",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=1468"
+        },
+        "Dirt 4": {
+            "Amazon": "https://www.amazon.com/-/es/Dirt-4-PS4/dp/B07CWNV53M/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Dirt+4&qid=1620329154&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP4001-CUSA07153_00-DIRT4U0000000001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/dirt-4/trailers",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=43274"
+        },
+        "Super Mario 3D Land": {
+            "Amazon": "https://www.amazon.com/-/es/Super-Mario-3D-Land/dp/B002I092MM/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Super+Mario+3D+Land&qid=1620329320&sr=8-2",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/super-mario-3d-land-nintendo-selects.html",
+            "Metacritic": "https://www.metacritic.com/game/3ds/super-mario-3d-land",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=9361"
+        },
+        "The Legend of Zelda: Majora's Mask 3D": {
+            "Amazon": "https://www.amazon.com/-/es/Legend-Zelda-Majoras-Mask-3D/dp/B00PB9LZQI/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=The+Legend+of+Zelda%3A+Majora%27s+Mask+3D&qid=1620329522&sr=8-1",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/the-legend-of-zelda-majora-s-mask-3d-nintendo-selects.html",
+            "Metacritic": "https://www.metacritic.com/game/3ds/the-legend-of-zelda-majoras-mask-3d",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=23235"
+        },
+        "Captain Toad: Treasure Tracker": {
+            "Amazon": "https://www.amazon.com/-/es/Captain-Toad-Treasure-Tracker-Nintendo-Switch/dp/B07C9743CT/ref=pd_sbs_1?pd_rd_w=B7Yad&pf_rd_p=2419a049-62bf-452e-b0d0-ca5b7e35a7b4&pf_rd_r=N6XC9AGW9HH3VXZARNQ0&pd_rd_r=7698ac91-d77a-446e-a16f-e60b3da61e7b&pd_rd_wg=oMzHz&pd_rd_i=B07C9743CT&psc=1",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/captain-toad-treasure-tracker-switch-us.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/captain-toad-treasure-tracker",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=19217"
+        },
+        "Donkey Kong Country: Tropical Freeze": {
+            "Amazon": "https://www.amazon.com/-/es/Donkey-Kong-Country-Tropical-Freeze-Nintendo/dp/B00DC7O77A/ref=sr_1_3?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Donkey+Kong+Country%3A+Tropical+Freeze&qid=1620329700&sr=8-3",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/donkey-kong-country-tropical-freeze-can.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/donkey-kong-country-tropical-freeze",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=2691"
+        },
+        "Shenmue III": {
+            "Amazon": "https://www.amazon.com/-/es/Shenmue-3-PlayStation-4/dp/B07PRN8W7L/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Shenmue+III&qid=1620329850&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP2047-CUSA12289_00-SHENMUEIII0000US",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/pc/shenmue-iii",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=26766"
+        },
+        "New Super Mario Bros. U Deluxe": {
+            "Amazon": "https://www.amazon.com/-/es/Super-Mario-Bros-Deluxe-Nintendo-Switch/dp/B07HHN42WK/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=New+Super+Mario+Bros.+U+Deluxe&qid=1621115815&sr=8-2",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/new-super-mario-bros-u-deluxe-usa.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/new-super-mario-bros-u-deluxe",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=63660"
+        },
+        "Crash Bandicoot 4: It's About Time": {
+            "Amazon": "https://www.amazon.com/-/es/Crash-Bandicoot-Its-About-Time-PS4/dp/B08HRN6V5T/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Crash+Bandicoot+4%3A+It’s+About+Time&qid=1620330112&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0002-PPSA02432_00-CB4THEGAME000001",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/crash-bandicoot-4-its-about-time",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=80317"
+        },
+        "Nioh": {
+            "Amazon": "https://www.amazon.com/-/es/Nioh-Hits-PlayStation-4/dp/B07SVZL9XF/ref=sr_1_4?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Nioh&qid=1620330264&sr=8-4",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP9000-CUSA07113_00-NIOH000000000000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/nioh",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=36936"
+        },
+        "Nioh 2": {
+            "Amazon": "https://www.amazon.com/-/es/Nioh-2-PlayStation-4/dp/B07DK2P8P7/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Nioh+2&qid=1620330349&sr=8-1",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP9000-CUSA15532_00-NIOH2NA000000000",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/nioh-2",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=60877"
+        },
+        "Batman: Return to Arkham": {
+            "Amazon": "https://www.amazon.com/-/es/Batman-Return-Arkham-Xbox-One/dp/B01FW6WY14/ref=sr_1_4?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Batman%3A+Return+to+arkham&qid=1620330476&sr=8-4",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP1018-CUSA04601_00-RETURNTOARKHAMHD",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/xbox-one/batman-return-to-arkham",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=41882"
+        },
+        "New Super Lucky's Tale": {
+            "Amazon": "https://www.amazon.com/-/es/New-Super-Luckys-Tale-Cambiar/dp/B07ZZTZ414/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=New+Super+Lucky%27s+Tale+-+Nintendo+Switch&qid=1621115708&sr=8-2",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/new-super-lucky-s-tale.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/new-super-luckys-tale",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=71552"
+        },
+        "Tekken 7": {
+            "Amazon": "https://www.amazon.com/-/es/Tekken-7-PS4/dp/B00ZFQC0KC/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Tekken+7&qid=1620330754&sr=8-2",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0700-CUSA05972_00-000000000TEKKEN7",
+            "NintendoStore": "None",
+            "Metacritic": "https://www.metacritic.com/game/playstation-4/tekken-7",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=46226"
+        },
+        "Astral Chain": {
+            "Amazon": "https://www.amazon.com/-/es/Astral-Chain-Nintendo-Switch-digital/dp/B07SRXPJ8G/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Astral+Chain&qid=1621115589&sr=8-2",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/astral-chain-us.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/astral-chain",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=64993"
+        },
+        "Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition": {
+            "Amazon": "https://www.amazon.com/-/es/Dragon-Quest-XI-Echoes-Elusive-Definitive/dp/B08DJXW579/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=DRAGON+QUEST+XI+S%3A+Echoes+of+an+Elusive+Age&qid=1620331461&sr=8-1",
+            "PlaystationStore": "https://store.playstation.com/en-us/product/UP0082-CUSA18600_00-0000000000000000",
+            "NintendoStore": "https://store.nintendo.com/dragon-quest-xi-s-echoes-of-an-elusive-age-definitive-edition-us.html",
+            "Metacritic": "https://www.metacritic.com/game/xbox-one/dragon-quest-xi-s-echoes-of-an-elusive-age---definitive-edition",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=69743"
+        },
+        "Kirby Star Allies": {
+            "Amazon": "https://www.amazon.com/-/es/Nintendo-Kirby-Star-Allies-Switch/dp/B072QN7FWK/ref=sr_1_2?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Kirby+Star+Allies&qid=1620331700&sr=8-2",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/kirby-star-allies-us.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/kirby-star-allies",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=46442"
+        },
+        "Yoshi's Crafted World": {
+            "Amazon": "https://www.amazon.com/-/es/Yoshis-Crafted-World-Nintendo-Switch/dp/B07MC8XD9C/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Yoshi%27s+Crafted+World&qid=1620332188&sr=8-1",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/yoshi-s-crafted-world-usa.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/yoshis-crafted-world",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=46441"
+        },
+        "Sushi Striker: The Way of Sushido": {
+            "Amazon": "https://www.amazon.com/-/es/Sushi-Striker-camino-Sushido-Nintendo-Switch/dp/B07BC46L6F/ref=sr_1_1?__mk_es_US=ÅMÅŽÕÑ&dchild=1&keywords=Sushi+Striker%3A+The+Way+of+Sushido&qid=1620332373&sr=8-1",
+            "PlaystationStore": "None",
+            "NintendoStore": "https://store.nintendo.com/sushi-striker-the-way-of-sushido-nintendo-switch.html",
+            "Metacritic": "https://www.metacritic.com/game/switch/sushi-striker-the-way-of-sushido",
+            "HowLongToBeat": "https://howlongtobeat.com/game?id=57420"
         }
     }
 }

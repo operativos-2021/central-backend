@@ -1,9 +1,4 @@
-from flask import Flask
-from flask_restful import Api, Resource, reqparse, abort
-from scraping.webscraper import doScraping
-import multiprocessing
-import os
-import json
+from flask_restful import Resource, reqparse
 import boto3
 from botocore.exceptions import ClientError
 
