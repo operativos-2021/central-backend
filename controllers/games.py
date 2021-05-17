@@ -7,10 +7,27 @@ import os
 import json
 import scraping.webscraper as webscraper
 
+actual_path = os.path.dirname(os.path.abspath(__file__))
+games_path = actual_path + "/game_list.json"
+scrape_result_path = actual_path + "/scrape_result.json"
+outputfile_amazon = actual_path.replace("\controllers","/scraping/outputfile_amazon.json")
+outputfile_howlongtobeat = actual_path.replace("\controllers","/scraping/outputfile_howlongtobeat.json")
+outputfile_playstation = actual_path.replace("\controllers","/scraping/outputfile_playstation.json")
+outputfile_metacritic = actual_path.replace("\controllers","/scraping/outputfile_metacritic.json")
 final_data = {}
 class games(Resource):
     def get(self, quantity):
+        print(outputfile_amazon)
+        if  os.path.exists(outputfile_amazon):
+            os.remove(outputfile_amazon)
+        if os.path.exists(outputfile_playstation):
+            os.remove(outputfile_playstation)
+        if os.path.exists(outputfile_metacritic):
+            os.remove(outputfile_metacritic)
+        if os.path.exists(outputfile_howlongtobeat):
+            os.remove(outputfile_howlongtobeat)
         global final_data
+        final_data = {}
         print("Obtener juegos: " + str(quantity))
         actual_path = os.path.dirname(os.path.abspath(__file__))
         scrape_result_path = actual_path.replace("controllers","scraping/scrape_result.json")

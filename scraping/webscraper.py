@@ -38,14 +38,6 @@ games_data = json.load(f)
 def doScraping(game):
     print(game)
     global baseURL
-    if  os.path.exists(outputfile_amazon):
-        os.remove(outputfile_amazon)
-    if os.path.exists(outputfile_playstation):
-        os.remove(outputfile_playstation)
-    if os.path.exists(outputfile_metacritic):
-        os.remove(outputfile_metacritic)
-    if os.path.exists(outputfile_howlongtobeat):
-        os.remove(outputfile_howlongtobeat)
 
     baseAURL = games_data["data"][game]["Amazon"]
     basePURL = games_data["data"][game]["PlaystationStore"]
@@ -61,7 +53,7 @@ def doScraping(game):
     return game, games_final_result
 
 def collect_game_info():
-    time.sleep(2)
+    time.sleep(3)
     game_info = {}
     for page in output_data:
         if page["url"].find("https://www.metacritic.com")!=-1:
