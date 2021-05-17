@@ -1,199 +1,117 @@
-# from selenium import webdriver
-# from webdriver_manager.chrome import ChromeDriverManager
-# import json
-# import os
-
-# from scraping.scrapers.amazon_scraper import getAmazonInfo
-# from scraping.scrapers.playstation_scraper import getPlaystationInfo
-# from scraping.scrapers.nintendo_scraper import getNintendoInfo
-# from scraping.scrapers.metacritic_scraper import getMetacriticInfo
-# from scraping.scrapers.howlongtobeat_scraper import getHowLongToBeatInfo
-
-
-# global disable_continue
-# disable_continue = None
-
-# games_info = {}
-# actual_path = os.path.dirname(os.path.abspath(__file__))
-# print("ACTUAL PATH:"+actual_path + "  Test")
-# chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument("--headless")
-# chrome_options.add_argument("--disable-dev-shm-usage")
-# chrome_options.add_argument("--no-sandbox")
-# chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_PATH') # GOOGLE_CHROME_PATH: /app/.apt/usr/bin/google-chrome; GOOGLE_CHROME_BIN=/app/.apt/usr/bin/google-chrome
-
-# print( os.environ.get('GOOGLE_CHROME_PATH'))
-# print( os.environ.get('CHROMEDRIVER_PATH'))
-
-# driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), chrome_options=chrome_options) #CHROMEDRIVER_PATH:   /app/.chromedriver/bin/chromedriver CHROMEDRIVER_PATH=/app/.chromedriver/bin/chromedriver
-
-# # op = webdriver.ChromeOptions()
-# # op.add_argument('headless')
-# # driver = webdriver.Chrome(ChromeDriverManager().install(), options=op)
-
-# result_path = actual_path + "/game_list.json"
-# f = open(result_path)
-# games_data = json.load(f)
-
-# def scrapWebsite(page, link):
-#     # if page == "Amazon":
-#     #     return scrapAmazon(link)
-#     if page == "PlaystationStore":
-#         return scrapPlaystation(link)
-#     elif page == "NintendoStore":
-#         return scrapNintendo(link)
-#     elif page == "Metacritic":
-#         return scrapMetacritic(link)
-#     elif page == "HowLongToBeat":
-#         return scrapHLTB(link)
-    
-# def scrapAmazon(url):
-#     global disable_continue
-
-#     if disable_continue == None:
-#         disable_continue = True
-#     else:
-#         disable_continue = False
-    
-#     info = getAmazonInfo(driver, url, disable_continue)
-#     return info
-
-# def scrapPlaystation(url):
-#     info = getPlaystationInfo(driver, url)
-#     return info
-
-# def scrapNintendo(url):
-#     info = getNintendoInfo(driver, url)
-#     return info
-
-# def scrapMetacritic(url):
-#     info = getMetacriticInfo(driver, url)
-#     return info
-
-# def scrapHLTB(url):
-#     info = getHowLongToBeatInfo(driver, url)
-#     return info
-
-
-# def doScraping(game_index):
-#     keysList = list(games_data["data"].keys())
-#     game_name = keysList[game_index]
-#     games_info[game_name] = {}
-#     for page in games_data["data"][game_name]:
-#         link = games_data["data"][game_name][page]
-#         if not link == "None":
-#             games_info[game_name][page] = scrapWebsite(page, link) 
-#     f.close()
-
-#     driver.close()
-
-#     # games_info[game_index] = str(game_index)
-    
-#     print(games_info)
-#     actual_path = os.path.dirname(os.path.abspath(__file__))
-#     result_path = actual_path + "/scrape_result.json"
-
-#     # with open(result_path, "w") as outfile: 
-#     #     json.dump(games_info, outfile)
-#     with open(result_path, "r+") as file:
-#         data = json.load(file)
-#         data.update(games_info)
-#         file.seek(0)
-#         json.dump(data, file)
-        
-#     file = open(result_path)
-#     data = json.load(file)
-#     return data
-
-
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-import json
+import crochet
+import time
 import os
+import json
+import random
+# Importing our Scraping Function from the scrapers file
+from scraping.webscrapy.spiders.amazonscraper import AmazonspiderSpider
+from scraping.webscrapy.spiders.playstationscraper import PlaystationspiderSpider
+from scraping.webscrapy.spiders.nintendoscraper import NintendospiderSpider
+from scraping.webscrapy.spiders.metacriticscraper import MetacriticspiderSpider
+from scraping.webscrapy.spiders.howlongtobeatscraper import HowLongToBeatspiderSpider
+from flask import Flask , render_template, jsonify, request, redirect, url_for
+from scrapy import signals
+from scrapy.crawler import CrawlerRunner
+from scrapy.signalmanager import dispatcher
+from scrapy.utils.project import get_project_settings
 
-from scraping.scrapers.amazon_scraper import getAmazonInfo
-from scraping.scrapers.playstation_scraper import getPlaystationInfo
-from scraping.scrapers.nintendo_scraper import getNintendoInfo
-from scraping.scrapers.metacritic_scraper import getMetacriticInfo
-from scraping.scrapers.howlongtobeat_scraper import getHowLongToBeatInfo
+final_data = {}
+crochet.setup()
+output_data = []
+crawl_runner = CrawlerRunner({
+                'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36 OPR/75.0.3969.259'
+            })
 
 
-global disable_continue
-disable_continue = None
 
-games_info = {}
 actual_path = os.path.dirname(os.path.abspath(__file__))
-
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument("--headless")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_PATH') # GOOGLE_CHROME_PATH: /app/.apt/usr/bin/google-chrome; GOOGLE_CHROME_BIN=/app/.apt/usr/bin/google-chrome
-
-driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), chrome_options=chrome_options) #CHROMEDRIVER_PATH:   /app/.chromedriver/bin/chromedriver CHROMEDRIVER_PATH=/app/.chromedriver/bin/chromedriver
-
-
-
+games_path = actual_path + "/game_list.json"
 scrape_result_path = actual_path + "/scrape_result.json"
-game_list_path = actual_path + "/game_list.json"
+outputfile_amazon = actual_path + "/outputfile_amazon.json"
+outputfile_howlongtobeat = actual_path + "/outputfile_howlongtobeat.json"
+outputfile_playstation = actual_path + "/outputfile_playstation.json"
+outputfile_metacritic = actual_path + "/outputfile_metacritic.json"
 
-f = open(game_list_path)
+f = open(games_path)
 games_data = json.load(f)
 
-def scrapWebsite(page, link):
-    if page == "Amazon":
-        return scrapAmazon(link)
-    elif page == "PlaystationStore":
-        return scrapPlaystation(link)
-    elif page == "NintendoStore":
-        return scrapNintendo(link)
-    elif page == "Metacritic":
-        return scrapMetacritic(link)
-    elif page == "HowLongToBeat":
-        return scrapHLTB(link)
-    
-    
-def scrapAmazon(url):
-    global disable_continue
-
-    if disable_continue == None:
-        disable_continue = True
-    else:
-        disable_continue = False
-    
-    info = getAmazonInfo(driver, url, disable_continue)
-    return info
-
-def scrapPlaystation(url):
-    info = getPlaystationInfo(driver, url)
-    return info
-
-def scrapNintendo(url):
-    info = getNintendoInfo(driver, url)
-    return info
-
-def scrapMetacritic(url):
-    info = getMetacriticInfo(driver, url)
-    return info
-
-def scrapHLTB(url):
-    info = getHowLongToBeatInfo(driver, url)
-    return info
-
-def closeDriver():
-    driver.close()
-    
 def doScraping(game):
     print(game)
-    games_info[game] = {}
-    for page in games_data["data"][game]:
-        link = games_data["data"][game][page]
-        if not link == "None":
-            games_info[game][page] = scrapWebsite(page, link)
-    with open(scrape_result_path, "r+") as file:
-        data = json.load(file)
-        data.update({game: games_info[game]})
-        file.seek(0)
-        json.dump(data, file)
-    driver.close()
-        
+    global baseURL
+    # if  os.path.exists(outputfile_amazon):
+    #     os.remove(outputfile_amazon)
+    # if os.path.exists(outputfile_playstation):
+    #     os.remove(outputfile_playstation)
+    # if os.path.exists(outputfile_metacritic):
+    #     os.remove(outputfile_metacritic)
+    # if os.path.exists(outputfile_howlongtobeat):
+    #     os.remove(outputfile_howlongtobeat)
+
+    baseAURL = games_data["data"][game]["Amazon"]
+    basePURL = games_data["data"][game]["PlaystationStore"]
+    baseMURL = games_data["data"][game]["Metacritic"]
+    baseHURL = games_data["data"][game]["HowLongToBeat"]
+
+    scrape_with_crochet_Amazon(baseURL=baseAURL)
+    scrape_with_crochet_PlayStation(baseURL=basePURL)
+    scrape_with_crochet_Metacritic(baseURL=baseMURL)
+    scrape_with_crochet_HowLongToBeat(baseURL=baseHURL)
+    games_final_result = collect_game_info()
+    # final_data[game] = games_final_result
+    # print(final_data)
+    trys = 0
+    # while trys < 3:
+    #     time.sleep(random.uniform(0, 1))
+    #     try:
+    #         with open(scrape_result_path, "r+") as file:
+    #             data = json.load(file)
+    #             data.update({game: games_final_result})
+    #             file.seek(0)
+    #             json.dump(data, file)
+    #             break
+    #     except: 
+    #         trys +=1
+    return game, games_final_result
+
+def collect_game_info():
+    time.sleep(2)
+    game_info = {}
+    for page in output_data:
+        if page["url"].find("https://www.metacritic.com")!=-1:
+            game_info["Metacritic"] = page
+        elif page["url"].find("https://store.playstation.com")!=-1:
+            game_info["PlaystationStore"] = page
+        elif page["url"].find("https://howlongtobeat.com")!=-1:
+            game_info["HowLongToBeat"] = page
+        elif page["url"].find("https://www.amazon.com")!=-1:
+            game_info["Amazon"] = page
+    return game_info
+#@crochet.run_in_reactor
+def scrape_with_crochet_Amazon(baseURL):
+    global crawl_runner
+    dispatcher.connect(_crawler_result, signal=signals.item_scraped)
+    eventual = crawl_runner.crawl(AmazonspiderSpider, category=baseURL)
+    return eventual
+
+def scrape_with_crochet_PlayStation(baseURL):
+    global crawl_runner
+    dispatcher.connect(_crawler_result, signal=signals.item_scraped)
+    eventual = crawl_runner.crawl(PlaystationspiderSpider, category=baseURL)
+    return eventual
+    
+def scrape_with_crochet_Metacritic(baseURL):
+    global crawl_runner
+    dispatcher.connect(_crawler_result, signal=signals.item_scraped)
+    eventual = crawl_runner.crawl(MetacriticspiderSpider, category=baseURL)
+    return eventual
+      
+def scrape_with_crochet_HowLongToBeat(baseURL):
+    global crawl_runner
+    dispatcher.connect(_crawler_result, signal=signals.item_scraped)
+    eventual = crawl_runner.crawl(HowLongToBeatspiderSpider, category=baseURL)
+
+    return eventual  
+
+def _crawler_result(item, response, spider):
+    global output_data
+    output_data.append(dict(item)) 
