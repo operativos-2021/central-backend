@@ -38,27 +38,11 @@ class games(Resource):
             pool_result = a_pool.map(doScraping,keys_to_scrape)
             for game,game_info in pool_result:
                 final_data[game]=game_info
-            #Save Data 
-            # file = open(scrape_result_path)
-            # data = json.load(file)
-            # with open(scrape_result_path, "w") as outfile: 
-            #     json.dump({}, outfile)
-            # final_data[str(index)] = data
 
             if(quantity==0):
                 break
             else:
                 start_index +=pc_limit
-            # index += 1
-        # keys = list(games_data["data"].keys())
-        # print("A iniciar: " + keys[0])
-        # doScraping(keys[0])
-        # print("A iniciar: " + keys[1])
-        # doScraping(keys[1])
-        # output = {}
-        # for page in final_data:
-        #     for game in page:
-        #         output[game.key()]=final_data[page][game]
         return {"data":final_data}
 
 

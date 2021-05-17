@@ -38,14 +38,14 @@ games_data = json.load(f)
 def doScraping(game):
     print(game)
     global baseURL
-    # if  os.path.exists(outputfile_amazon):
-    #     os.remove(outputfile_amazon)
-    # if os.path.exists(outputfile_playstation):
-    #     os.remove(outputfile_playstation)
-    # if os.path.exists(outputfile_metacritic):
-    #     os.remove(outputfile_metacritic)
-    # if os.path.exists(outputfile_howlongtobeat):
-    #     os.remove(outputfile_howlongtobeat)
+    if  os.path.exists(outputfile_amazon):
+        os.remove(outputfile_amazon)
+    if os.path.exists(outputfile_playstation):
+        os.remove(outputfile_playstation)
+    if os.path.exists(outputfile_metacritic):
+        os.remove(outputfile_metacritic)
+    if os.path.exists(outputfile_howlongtobeat):
+        os.remove(outputfile_howlongtobeat)
 
     baseAURL = games_data["data"][game]["Amazon"]
     basePURL = games_data["data"][game]["PlaystationStore"]
@@ -57,20 +57,6 @@ def doScraping(game):
     scrape_with_crochet_Metacritic(baseURL=baseMURL)
     scrape_with_crochet_HowLongToBeat(baseURL=baseHURL)
     games_final_result = collect_game_info()
-    # final_data[game] = games_final_result
-    # print(final_data)
-    trys = 0
-    # while trys < 3:
-    #     time.sleep(random.uniform(0, 1))
-    #     try:
-    #         with open(scrape_result_path, "r+") as file:
-    #             data = json.load(file)
-    #             data.update({game: games_final_result})
-    #             file.seek(0)
-    #             json.dump(data, file)
-    #             break
-    #     except: 
-    #         trys +=1
     return game, games_final_result
 
 def collect_game_info():
