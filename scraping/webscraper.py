@@ -35,7 +35,7 @@ def doScraping(game):
     baseMURL = 'https://www.metacritic.com/game/pc/minecraft'
     baseHURL = 'https://howlongtobeat.com/game?id=6064'
 
-    scrape_with_crochet(baseURL=baseNURL)
+    scrape_with_crochet(baseURL=basePURL)
     
     return jsonify(output_data)  # Returns the scraped data after being running for 5 seconds.
     # os.system('cmd /c "cd '+actual_path+' && scrapy crawl hltbspider"')  
@@ -48,7 +48,7 @@ def scrape_with_crochet(baseURL):
     dispatcher.connect(_crawler_result, signal=signals.item_scraped)
     
     # This will connect to the Spider function in our scrapy file and after each yield will pass to the crawler_result function.
-    eventual = crawl_runner.crawl(NintendospiderSpider, category=baseURL)
+    eventual = crawl_runner.crawl(PlaystationspiderSpider, category=baseURL)
     return eventual
 
 def _crawler_result(item, response, spider):
