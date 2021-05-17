@@ -15,20 +15,19 @@ class PlaystationspiderSpider(scrapy.Spider):
     name = 'playstationspider'
     allowed_domain = ["https://store.playstation.com"]
     myBaseUrl = ''
-    start_urls = []
+    start_urls = [1]
     
     def __init__(self, category='', **kwargs): # The category variable will have the input URL.
         self.myBaseUrl = category
-        self.start_urls.append(self.myBaseUrl)
+        self.start_urls[0] =(self.myBaseUrl)
         super().__init__(**kwargs)
 
-    custom_settings = {'FEED_URI': 'scraping/outputfile.json', 'CLOSESPIDER_TIMEOUT' : 15}
+    custom_settings = {'FEED_URI': 'scraping/outputfile_playstation.json', 'CLOSESPIDER_TIMEOUT' : 15}
 
     def parse(self, response):
         items = PlaystationItem()
         title = response.css('h1.psw-m-b-xs.psw-h1.psw-l-line-break-word::text').get()
         price = response.css('span.psw-h3::text').get()
-        print(title)
 
         try:
             items['productTitle'] = ''.join(title).strip()

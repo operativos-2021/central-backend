@@ -20,14 +20,14 @@ class HowLongToBeatspiderSpider(scrapy.Spider):
     name = 'hltbspider'
     allowed_domain = ["https://howlongtobeat.com"]
     myBaseUrl = ''
-    start_urls = []
+    start_urls = [1]
     
     def __init__(self, category='', **kwargs): # The category variable will have the input URL.
         self.myBaseUrl = category
-        self.start_urls.append(self.myBaseUrl)
+        self.start_urls[0] =(self.myBaseUrl)
         super().__init__(**kwargs)
 
-    custom_settings = {'FEED_URI': 'scraping/outputfile.json', 'CLOSESPIDER_TIMEOUT' : 15}
+    custom_settings = {'FEED_URI': 'scraping/outputfile_howlongtobeat.json', 'CLOSESPIDER_TIMEOUT' : 15}
 
 
     def parse(self, response):
@@ -36,7 +36,6 @@ class HowLongToBeatspiderSpider(scrapy.Spider):
         img = 'https://howlongtobeat.com' + response.xpath('/html/body/div[1]/div/div[3]/div/div[1]/div[1]/img').xpath('@src').get()
         info = self.getProductInfo(response)    
         times = self.getProductTimes(response)
-        print(title)
 
         items['productTitle'] = ''.join(title).strip()
         items['productInfo'] = info
@@ -60,8 +59,6 @@ class HowLongToBeatspiderSpider(scrapy.Spider):
             if description:
                 text = response.xpath('//*[@id="global_site"]/div[3]/div/div[2]/div[2]/div[2]/text()').get()
                 rest = response.xpath('/html/body/div[1]/div/div[3]/div/div[2]/div[2]/div[2]/span/text()').get()
-                print(text)
-                print(rest)
                 if rest:
                     text += rest
 

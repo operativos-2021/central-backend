@@ -14,14 +14,14 @@ class MetacriticspiderSpider(scrapy.Spider):
     name = 'metacriticspider'
     allowed_domain = ["https://www.metacritic.com"]
     myBaseUrl = ''
-    start_urls = []
+    start_urls = [1]
     
     def __init__(self, category='', **kwargs): # The category variable will have the input URL.
         self.myBaseUrl = category
-        self.start_urls.append(self.myBaseUrl)
+        self.start_urls[0] =(self.myBaseUrl)
         super().__init__(**kwargs)
 
-    custom_settings = {'FEED_URI': 'scraping/outputfile.json', 'CLOSESPIDER_TIMEOUT' : 15}
+    custom_settings = {'FEED_URI': 'scraping/outputfile_metacritic.json', 'CLOSESPIDER_TIMEOUT' : 15}
 
 
     def parse(self, response):
@@ -29,8 +29,6 @@ class MetacriticspiderSpider(scrapy.Spider):
         title = response.xpath('/html/body/div[1]/div[2]/div[1]/div[1]/div/div/div/div/div/div/div/div/div[1]/div[1]/div[1]/div[2]/a/h1/text()').get()
         metascore = response.xpath('/html/body/div[1]/div[2]/div[1]/div[1]/div/div/div/div/div/div/div/div/div[1]/div[1]/div[3]/div/div/div[2]/div[1]/div[1]/div/div/a/div/span/text()').get() 
         userscore = response.xpath('/html/body/div[1]/div[2]/div[1]/div[1]/div/div/div/div/div/div/div/div/div[1]/div[1]/div[3]/div/div/div[2]/div[1]/div[2]/div[1]/div/a/div/text()').get()
-        print(title)
-        print(metascore)
 
         if title:
             items['productTitle'] = ''.join(title).strip()
