@@ -57,6 +57,7 @@ def doScraping(game):
     scrape_with_crochet_Metacritic(baseURL=baseMURL)
     scrape_with_crochet_HowLongToBeat(baseURL=baseHURL)
     games_final_result = collect_game_info()
+    print(output_data)
     return game, games_final_result
 
 def collect_game_info():
