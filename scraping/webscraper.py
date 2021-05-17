@@ -61,7 +61,7 @@ def doScraping(game):
     return game, games_final_result
 
 def collect_game_info():
-    time.sleep(5)
+    time.sleep(2)
     game_info = {}
     for page in output_data:
         if page["url"].find("https://www.metacritic.com")!=-1:
