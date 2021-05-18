@@ -6,18 +6,32 @@ import multiprocessing
 import os
 import json
 
-
+final_data = {}
+actual_path = os.path.dirname(os.path.abspath(__file__))
+games_path = actual_path + "/game_list.json"
+scrape_result_path = actual_path + "/scrape_result.json"
+outputfile_amazon = actual_path.replace("\controllers","/scraping/outputfile_amazon.json")
+outputfile_howlongtobeat = actual_path.replace("\controllers","/scraping/outputfile_howlongtobeat.json")
+outputfile_playstation = actual_path.replace("\controllers","/scraping/outputfile_playstation.json")
+outputfile_metacritic = actual_path.replace("\controllers","/scraping/outputfile_metacritic.json")
 class load_balance(Resource):
-        
+
     def get(self,games_range):
         def getGames(key_from,key_to):
-            actual_path = os.path.dirname(os.path.abspath(__file__))
-            scrape_result_path = actual_path.replace("controllers","scraping/scrape_result.json")
+            print(outputfile_amazon)
+            if  os.path.exists(outputfile_amazon):
+                os.remove(outputfile_amazon)
+            if os.path.exists(outputfile_playstation):
+                os.remove(outputfile_playstation)
+            if os.path.exists(outputfile_metacritic):
+                os.remove(outputfile_metacritic)
+            if os.path.exists(outputfile_howlongtobeat):
+                os.remove(outputfile_howlongtobeat)
+            global final_data
+        
             game_list_path = actual_path.replace("controllers","scraping/game_list.json")
-
             with open(scrape_result_path, "w") as outfile: 
                 json.dump({}, outfile)
-        
             f = open(game_list_path)
             games_data = json.load(f)
             
@@ -36,12 +50,17 @@ class load_balance(Resource):
                 keys_to_scrape = keys[start_index:end_index]
                 # print("Scraping del " + str(start_index) + " hasta el " + str(end_index))
                 a_pool = multiprocessing.Pool()
-                a_pool.map(doScraping,keys_to_scrape)
+                pool_result = a_pool.map(doScraping,keys_to_scrape)
+                for game,game_info in pool_result:
+                    final_data[game]=game_info
                 if(key_to==0):
                     break
                 else:
                     start_index +=pc_limit
-
+                    
+            with open(scrape_result_path, "w") as outfile: 
+                    json.dump(final_data, outfile)
+            
         print("Balanceo de cargas, rango: " + str(games_range))
         actual_path = os.path.dirname(os.path.abspath(__file__))
         scrape_result_path = actual_path.replace("controllers","scraping/scrape_result.json")
